@@ -10,6 +10,9 @@
 
 // Silence MSVC sprintf unsafe warnings
 #define _CRT_SECURE_NO_WARNINGS
+// Silence Apple sprintf deprecated warnings
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 #include <iostream>
 #include <string>
